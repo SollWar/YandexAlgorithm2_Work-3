@@ -9,8 +9,8 @@ fun main() {
 }
 
 fun metnum(str: List<String>): StringBuffer {
-    val out: StringBuffer = StringBuffer()
-    val set: HashSet<Int> = hashSetOf()
+    val out = StringBuffer()
+    val set = hashSetOf<Int>()
 
     for (i in str) {
         if (i != "") out.append(if (set.add(i.toInt())) "NO\n" else "YES\n")

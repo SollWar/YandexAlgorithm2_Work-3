@@ -15,6 +15,9 @@ fun main() {
     println(unique(str, max, min))
 }
 
+// Решение через 2 массива
+// 1 массив - индексы равны нулю и положительным числам
+// 2 массив - индексы это модули от отрицательных чисел
 fun unique(str: List<String>, max: Int, min: Int): StringBuffer {
     val string = StringBuffer()
     val array = IntArray(max + 1)
